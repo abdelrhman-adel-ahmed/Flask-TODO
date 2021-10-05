@@ -1,0 +1,17 @@
+{
+    "editor.formatOnSave": true,
+    "python.sortImports.args": [
+      "--profile=black",
+    ],
+    //black:style the python code following pep8 convention
+    //isort:style the imports following pep8 convention
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=119"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+}
